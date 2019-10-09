@@ -92,4 +92,14 @@
 .rating {
   color: #ffb400;
   font-size: 28rpx;
+  width: 110%
+}
+/*修改样式*/
+.actor{
+ font-size:24rpx;
+ white-space:nowrap;
+ text-overflow:ellipsis;
+ overflow:hidden;
+ color:#686868;
+ width: 100%
 }

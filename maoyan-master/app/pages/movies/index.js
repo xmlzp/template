@@ -1,4 +1,3 @@
-
 var app = getApp()
 var event = require('../../utils/event')
 Page({
@@ -7,18 +6,17 @@ Page({
             currentCity: '',
             placestr: '找影视剧 影人 影院'
         },
-
-        indexData: {},
+        indexData: {},  //收的的数据
         counts: 10,
         start: 0
     },
-    onLoad: function () {
+  onLoad: function () {
         var that = this
         
         wx.request({
-            url: 'http://localhost:8888/api/index?city=' + that.data.currentCity + '&counts=' + that.data.counts + '&start=' + that.data.start,
+            url: 'http://localhost:8888/api/index?city=' + that.data.currentCity + '&counts=' + that.data.counts + '&start=' +                    that.data.start,
             success: function (res) {
-                console.log(res.data)
+                console.log(res)
                 that.setData({
                     indexData: res.data.data,
                     start: that.data.start + that.data.counts

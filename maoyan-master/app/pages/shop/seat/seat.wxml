@@ -55,7 +55,7 @@
     </view>
   </view>
   <view class="confirm" hidden="{{!seats.length}}">
-    <view class="total" >
+    <view class="total">
       <view class="price">
         <view class="price-s">{{seats.length*shop.price}}</view>
         <view class="price-y">元</view>
@@ -65,7 +65,7 @@
     <navigator url="../../book/book" class="confirm-s">确认选座</navigator>
   </view>
   <view class="confirm" hidden="{{seats.length}}">
-    <view class="total" >
+    <view class="total">
       <view class="price">
         <view class="price-s">0</view>
         <view class="price-y">元</view>

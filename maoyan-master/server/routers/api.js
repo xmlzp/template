@@ -4,20 +4,15 @@
 var express = require('express');
 var viru=require('../models/viru');
 var theater=require('../models/theater')
-
-
 var router = express.Router();
 var responseData;
-
-
 router.use( function(req, res, next) {
-
     responseData = {
         code: 0,
         message: ''
     }
     next();
-} );
+});
 router.get('/positionlist',function (req,res) {
     responseData.code = 1;
     responseData.message='ok';
@@ -32,12 +27,11 @@ router.get('/index',function (req,res) {
         swiperImg:['http://localhost:8888/public/img/swiper/1.png','http://localhost:8888/public/img/swiper/2.png','http://localhost:8888/public/img/swiper/3.png'],
         moviesList:viru.indexmovie
     };
+    console.log(responseData)
     res.json(responseData);
 })
 router.get('/moviesDetail',function (req,res) {
     var reqtitle=req.query.title
-
-
     responseData.data=viru.movie;
     responseData.code = 1;
     responseData.message = 'ok';

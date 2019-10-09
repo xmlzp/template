@@ -1,4 +1,5 @@
 function formatTime(date) {
+  console.log(date)
   var year = date.getFullYear()
   var month = date.getMonth() + 1
   var day = date.getDate()
@@ -15,9 +16,6 @@ function formatNumber(n) {
   n = n.toString()
   return n[1] ? n : '0' + n
 }
-
-
-
 function getWeek(len) {
   var weekday = new Array(7)
   weekday[0] = "周日";
@@ -39,13 +37,7 @@ function getWeek(len) {
     result.push(now.getMonthDay())
   };
   return result;
-  
 }
-
-
-
-
-
 module.exports = {
   formatTime: formatTime,
   getWeek:getWeek
