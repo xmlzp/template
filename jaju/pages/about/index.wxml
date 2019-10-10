@@ -1,0 +1,36 @@
+<loading hidden="{{loadingHide}}">
+  {{loadingText}}
+</loading>
+<!--pages/home/home.wxml-->
+<view class="banner">
+        <image src="/image/lx.jpg" mode="aspectFill"></image>
+    </view>
+
+
+<view class="IndexList">
+  <view bindtap="callmeTap">
+    <image src="../../image/tel.png" class="telIco" mode="widthFix"></image>
+    <text class="tel" bindtap="teltoUs">电话：15354880068（点击拨号）</text>
+  </view>
+  <view>
+    <image src="../../image/weixin.png" class="weixinIco" mode="widthFix"></image>
+    <text class="map">微信：泉州大白网络科技</text>
+  </view>
+  <view>
+    <image src="../../image/email.png" class="eIco" mode="widthFix"></image>
+    <text class="email">邮件：laosan0070@163.com </text>
+  </view>
+  <view>
+    <image src="../../image/map.png" class="mapIco" mode="widthFix"></image>
+    <text class="map" bindtap="click">内蒙古呼和浩特市托克托县光明路</text>
+  </view>
+</view>
+	<view class="goods-box">
+
+ <button class="goods-operation" open-type="contact">在线客服</button>
+</view>
+
+
+<view class="footer">
+  @2017 泉州大白网络科技 版权所有
+</view>
